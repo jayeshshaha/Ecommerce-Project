@@ -5,6 +5,11 @@ import { AiOutlineHome, AiOutlineShopping, AiOutlineLogin, AiOutlineUserAdd, AiO
 import { FaHeart } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 
+import { useDispatch, useSelector } from "react-redux";
+import { useLoginMutation } from "../../redux/features/usersApiSlice";
+// import { logout } from "../../redux/api/auth/authSlice";
+
+
 const Navigation = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [showSidebar, setshowSidebar] = useState(false);
@@ -55,6 +60,10 @@ const Navigation = () => {
           <span className="hidden nav-item-name mt-[3rem]">Favorite</span>
         </Link>
       </div>
+      </div>
+
+      <div className="relative">
+         <button onClick={toggleDropdown} className="f"></button>
       </div>
 
       <ul>
