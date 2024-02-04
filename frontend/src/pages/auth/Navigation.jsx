@@ -6,8 +6,10 @@ import { FaHeart } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 
 import { useDispatch, useSelector } from "react-redux";
-import { useLoginMutation } from "../../redux/features/usersApiSlice";
+import { useLoginMutation } from "../../redux/api/usersApiSlice";
+// import { logout } from "../../redux/features/auth/authSlice";
 // import { logout } from "../../redux/api/auth/authSlice";
+
 
 
 const Navigation = () => {
